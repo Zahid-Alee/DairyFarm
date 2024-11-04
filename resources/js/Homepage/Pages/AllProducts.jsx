@@ -70,12 +70,12 @@ const AllProducts = () => {
 
 
     const weightFilters = [
-        { key: 'up_to_10', value: 'Up to 10 Ton' },
-        { key: 'up_to_20', value: 'Up to 20 Ton' },
-        { key: 'up_to_30', value: 'Up to 30 Ton' },
-        { key: 'up_to_40', value: 'Up to 40 Ton' },
-        { key: 'up_to_50', value: 'Up to 50 Ton' },
-        { key: 'over_50', value: 'Over 50 Ton' },
+        { key: 'up_to_10', value: 'Up to 1 Kg' },
+        { key: 'up_to_20', value: 'Up to 2 Kg' },
+        { key: 'up_to_30', value: 'Up to 3 Kg' },
+        { key: 'up_to_40', value: 'Up to 4 Kg' },
+        { key: 'up_to_50', value: 'Up to 5 Kg' },
+        { key: 'over_50', value: 'Over 5 Kg' },
     ];
 
     const yearFilters = Array.from({ length: 2024 - 2000 + 1 }, (_, i) => (2000 + i));
@@ -98,21 +98,6 @@ const AllProducts = () => {
     const RenderSider = () => (
         <Sider width={'100%'} style={{ backgroundColor: 'white', padding: '10px' }}>
             <h3 style={{ fontSize: '16px', borderBottom: '1px solid', padding: '10px', textAlign: 'left', fontWeight: 'bold' }}>Filters</h3>
-            {slug != 'electric-bikes' && <div className='filter-item' style={{ marginTop: '20px', padding: '10px' }}>
-                <strong className='text-dark heading'>Year</strong>
-                <Select
-                    mode="multiple"
-                    className='item-group my-3'
-                    placeholder="Select years"
-                    onChange={handleYearChange}
-                    style={{ width: '100%' }}
-                    value={selectedYears}
-                >
-                    {yearFilters?.map(year => (
-                        <Option key={year} value={year}>{year}</Option>
-                    ))}
-                </Select>
-            </div>}
 
             {(slug != 'electric-bikes' && slug != 'electric-vehicles') && <div className='filter-item' style={{ marginTop: '20px', padding: '10px' }}>
                 <strong className='text-dark heading'>Weight</strong>

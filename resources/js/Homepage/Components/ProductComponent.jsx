@@ -1,9 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Flex, Image, Modal, Tooltip } from 'antd';
 import { RiWeightLine } from 'react-icons/ri';
-import { PiEngineBold } from 'react-icons/pi';
 import { GrCalendar, GrCar, GrCart } from 'react-icons/gr';
-import { IoPricetagsOutline } from 'react-icons/io5';
 import { MdWhatsapp } from 'react-icons/md';
 import { FaPlus } from 'react-icons/fa6';
 import { FaShoppingCart } from 'react-icons/fa';
@@ -21,12 +19,15 @@ function ProductComponent({ prod, index }) {
 
     return <>
         <div className=" wow fadeInUp" data-wow-delay="0.3s">
-            <div className="product-item">
+            <div className="product-item relative">
                 <div className="position-relative">
-                <img className='img-fluid' src={`/${prod?.image?.replace('public', 'storage')}`} alt={`Product ${index}`} style={{ width: '100%' }} />
+                    {state?.auth?.user?.role === 'wholeseller' && <div className="absolute  bg-lime-500 text-white font-medium text-xs w-fit py-1 px-3 rounded-md">10% OFF</div>}
+
+                    <img className='img-fluid' src={`/${prod?.image?.replace('public', 'storage')}`} alt={`Product ${index}`} style={{ width: '100%' }} />
 
                     <div className="product-overlay">
                         <div className="btn btn-square btn-secondary rounded-circle m-1" href="#">
+
 
                             <Flex gap={10} className='prod-images-modal'>
                                 <Image.PreviewGroup >
@@ -35,7 +36,7 @@ function ProductComponent({ prod, index }) {
                                         key={index}
                                         src={`/${prod?.image.replace('public', 'storage')}`}
                                         alt={`Product Image ${index + 1}`}
-                                        style={{ width: '10p%', maxHeight: '20px', marginBottom: '10px' }}
+                                        style={{ width: '100%', height: '100%', maxHeight: '20px', marginBottom: '10px' }}
                                     />
                                     {prod?.images?.map((image, index) => (
                                         <Image
@@ -54,10 +55,14 @@ function ProductComponent({ prod, index }) {
                     </div>
                 </div>
                 <div className="text-center p-4">
-                    <a className="d-block h5" href="">{prod.name}</a>
+                    <div className="d-block h5" href="">{prod.name}</div>
                     <span className="text-primary me-1">PKR {prod.price}</span>
                     <span className="text-decoration-line-through">PKR {prod.make}</span>
+                    <div className='text-primary me-1'>
+                        Weight- {prod?.weight}KG
+                    </div>
                 </div>
+
             </div>
         </div>
     </>

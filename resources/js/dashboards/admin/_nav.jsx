@@ -19,7 +19,8 @@ import {
   GrCircleQuestion,
   GrBlog,
   GrServices,
-  GrCar
+  GrCar,
+  GrHistory
 } from "react-icons/gr";
 import { LuMilk } from "react-icons/lu";
 
@@ -72,71 +73,21 @@ const _nav = [
     to: '/customers/orders',
     icon: <GrCart size={20} color='white' />,
   },
-
   {
-    component: CNavGroup,
-    name: 'Products ',
-    to: '/home',
-    icon: <GrMultiple size={20} color='white' />,
-    items: [
-
-      // {
-      //   component: CNavItem,
-      //   name: 'B2B',
-      //   to: '/machinery-vehicles/list',
-      //   icon: <GrCar size={20} color='white' />,
-      // },  
-      {
-        component: CNavItem,
-        name: 'Machine Parts',
-        to: '/spare-parts/list',
-        icon: <LuMilk size={20} color='white' />,
-      },
-
-    ],
+    component: CNavItem,
+    name: 'History',
+    to: '/customers/history',
+    icon: <GrHistory size={20} color='white' />,
   },
 
-  // {
-  //   component: CNavGroup,
-  //   name: 'Pages ',
-  //   to: '/home',
-  //   icon: <GrMultiple size={20} color='white' />,
-  //   items: [
+  {
+    component: CNavItem,
+    name: 'Products',
+    to: '/spare-parts/list',
+    icon: <LuMilk size={20} color='white' />,
+  },
 
-  //     {
-  //       component: CNavItem,
-  //       name: 'Home Page',
-  //       to: '/home/index/setting',
-  //       icon: <GrHome size={20} color='white' />,
-  //     },
-  //     {
-  //       component: CNavItem,
-  //       name: 'About Us',
-  //       to: '/home/about/setting',
-  //       icon: <GrCircleInformation size={20} color='white' />,
-  //     },
 
-  //     {
-  //       component: CNavItem,
-  //       name: 'Contact Us',
-  //       to: '/home/contact/setting',
-  //       icon: <GrContact size={20} color='white' />,
-  //     },
-  //     {
-  //       component: CNavItem,
-  //       name: 'User Reviews',
-  //       to: '/home/user/reviews',
-  //       icon: <GrUserExpert size={20} color='white' />,
-  //     },
-  //     {
-  //       component: CNavItem,
-  //       name: 'Blogs',
-  //       to: '/home/blogs',
-  //       icon: <GrBlog size={20} color='white' />,
-  //     },
-
-  //   ],
-  // },
   {
     component: CNavItem,
     name: 'Quries',

@@ -1,9 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Button, Checkbox, Flex, Skeleton, Spin, Tabs, Tooltip, Typography } from 'antd'; // Import Tabs from Ant Design
+import { Button, Flex, Tabs } from 'antd';
 import { ProductContext } from './context/ProductContext';
 import { useNavigate, useParams } from 'react-router-dom';
-import BasicEditor from '../../../../Homepage/Components/BasicEditor';
-import MyEditor from '@/Homepage/Components/DrafEditor';
 import UploadImage from '@/Components/UploadImage';
 import { CFormSelect } from '@coreui/react';
 import MultiFileUploaders from '@/Components/MultiFileUploaders';
@@ -22,18 +20,17 @@ function SparePartsForm() {
   const [categories, setCategories] = useState([]);
   const [brands, setBrands] = useState([]);
   const [selectedCat, setSelectedCat] = useState(null);
-  const [selectedBrand, setSlectedBrand] = useState(null);
+  const [, setSlectedBrand] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
   const [businessProd, setBusinessProd] = useState(false);
   const [prodTitle, setProdTitle] = useState('');
   const [price, setPrice] = useState('');
-  const [model, setModel] = useState('');
+  const [, setModel] = useState('');
   const [discount, setDiscount] = useState('');
   const [year, setYear] = useState('');
   const [weight, setWeight] = useState('');
   const [quantity, setQuantity] = useState('');
-
-  const [selectedTab, setSelectedTab] = useState('basic-info');
+  const [, setSelectedTab] = useState('basic-info');
 
   let navigate = useNavigate();
 
@@ -115,23 +112,9 @@ function SparePartsForm() {
     label: cat.name,
   }));
 
-  const brandsOptions = brands?.map((brand) => ({
-    value: brand.id,
-    label: brand.name,
-  }));
-
   function handleCatSelect(value) {
     setSelectedCat(value);
   }
-
-  function handleSelectBrand(value) {
-    setSlectedBrand(value);
-  }
-
-  function handleBusinessCheckbox() {
-    setBusinessProd(!businessProd);
-  }
-
   const handleSave = async (files) => {
 
     // dispatch({ payload: { loading: true } })

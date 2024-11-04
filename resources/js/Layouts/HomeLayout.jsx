@@ -1,5 +1,6 @@
 
 // import Navbar from '@/Homepage/Pages/Navbar';
+import Nav from '@/Homepage/Pages/blogs/Nav';
 import Footer from '@/Homepage/Pages/Footer';
 import Navbar from '@/Homepage/Pages/Navbar';
 // import Navbar from '@/Homepage/Pages/TestNav';
@@ -15,8 +16,9 @@ export default function HomeLayout({ auth, header, children }) {
             <div className="min-h-screen " style={{ background: "#fef8f5" }}>
                 {/* {state?.contextHolder} */}
                 {/* <Navbar auth={auth} /> */}
+                <Nav />
                 <main id='main' style={{ background: "#fef8f5", minHeight: '200px', }}>{children}</main>
-                {/* <Footer /> */}
+                <Footer />
             </div>
         </>
 

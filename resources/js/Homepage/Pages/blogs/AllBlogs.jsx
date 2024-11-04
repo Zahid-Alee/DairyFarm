@@ -48,7 +48,7 @@ function AllBlogs() {
                             <div class="card">
                                 <img src={blog.image?.replace('public', '/storage')} className="img-fluid" alt={blog.title} />
                                 <div class="card-img-overlay">
-                                    <a href="#" class="btn btn-light btn-sm">Autpulse</a>
+                                    <a href="#" class="btn btn-light btn-sm">Dairy Farm</a>
                                 </div>
                                 <div class="card-body">
                                     <h4 class="card-title">{blog.title}</h4>

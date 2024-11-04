@@ -22,6 +22,7 @@ const routes = [
   { path: '/charts', name: 'Charts', element: Charts },
   { path: '/transactions', name: 'Transaction', element: Transaction },
   { path: '/customers/orders', name: 'Orders', element: Orders },
+  { path: '/customers/history', name: 'History', element: Orders },
   { path: '/profile/settings', name: 'Profile', element: ProfileUpdate },
   { path: '/user/quries', name: 'Quries', element: Quries },
   { path: '/home/index/setting', name: 'Home Settings', element: HomeSettings },

@@ -13,7 +13,7 @@ const order_steps = {
   4: { value: "Delivered", color: "green" },
 };
 
-const Orders = () => {
+const Orders = ({ isHistory }) => {
   const [orders, setOrders] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [price, setPrice] = useState('');
@@ -101,6 +101,8 @@ const Orders = () => {
       ),
     },
   ];
+
+
 
   const expandedRowRender = (record) => (
     <table>

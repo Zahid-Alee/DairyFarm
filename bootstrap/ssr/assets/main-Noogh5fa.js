@@ -44,7 +44,7 @@ function AllBlogs() {
       var _a;
       return /* @__PURE__ */ jsx("div", { class: "col-12 col-sm-8 col-md-6 col-lg-4", children: /* @__PURE__ */ jsxs("div", { class: "card", children: [
         /* @__PURE__ */ jsx("img", { src: (_a = blog.image) == null ? void 0 : _a.replace("public", "/storage"), className: "img-fluid", alt: blog.title }),
-        /* @__PURE__ */ jsx("div", { class: "card-img-overlay", children: /* @__PURE__ */ jsx("a", { href: "#", class: "btn btn-light btn-sm", children: "Autpulse" }) }),
+        /* @__PURE__ */ jsx("div", { class: "card-img-overlay", children: /* @__PURE__ */ jsx("a", { href: "#", class: "btn btn-light btn-sm", children: "Dairy Farm" }) }),
         /* @__PURE__ */ jsxs("div", { class: "card-body", children: [
           /* @__PURE__ */ jsx("h4", { class: "card-title", children: blog.title }),
           /* @__PURE__ */ jsx("p", { class: "card-text", children: "I love quick, simple pasta dishes, and this is one of my favorite." }),

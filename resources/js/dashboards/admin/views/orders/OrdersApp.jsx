@@ -4,7 +4,7 @@ import Orders from './Orders'
 function OrdersApp() {
     return (
 
-        <Orders />
+        <Orders isHistory={true} />
     )
 }
 

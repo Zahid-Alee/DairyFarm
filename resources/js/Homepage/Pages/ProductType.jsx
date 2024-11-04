@@ -5,11 +5,11 @@ import ProductComponent from '../Components/ProductComponent';
 
 function ProductType() {
 
-    const { state, methods, dispatch } = useContext(HomeContext);
+    const { state, methods } = useContext(HomeContext);
 
     const prod_type = location.pathname.split('/').pop();
 
-    useEffect(() => {F
+    useEffect(() => {
 
         methods.loadBrandsAndCats({ slug: prod_type });
         methods.filterProducts({ prod_type: prod_type, page: 1 });
@@ -17,9 +17,8 @@ function ProductType() {
     }, [])
 
 
-
     return (
-        <div className='sm-p-0 container pt-5 p-3 sm:p-0 flex flex-col gap-3'>
+        <div className='sm-p-0 container pt-5 p-3 sm:p-0 flex flex-col gap-3 m-auto'>
 
             <div className="brands-container p-3 bg-white py-5 ">
 

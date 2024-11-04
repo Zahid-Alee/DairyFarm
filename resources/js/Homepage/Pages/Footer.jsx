@@ -4,65 +4,44 @@ import { GrMastercard } from 'react-icons/gr'
 
 function Footer() {
     return (
-        <div className="container-fluid bg-gray-800 text-light footer wow fadeIn" data-wow-delay="0.1s" style={{ position: 'static', marginTop: '0' }}>
-            <div className="container pb-5">
+        <div className="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+            <div className="container py-5">
                 <div className="row g-5">
-                    <div className="col-md-6 col-lg-4">
-                        <div className="bg-yellow-600 rounded p-4">
-                            <a href="index.html"><h1 className="text-white text-uppercase mb-3">Autopulse</h1></a>
-                            <p className="mb-0 text-white">Welcome to our business! We offer a comprehensive marketplace for heavy machinery including rollers, cranes, and bulldozers. Explore our extensive range of spare parts and products tailored for businesses in the heavy equipment industry. Enjoy a seamless and efficient purchasing experience with us.</p>
-
+                    <div className="col-lg-3 col-md-6">
+                        <h5 className="text-white mb-4">Our Office</h5>
+                        <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>105 WB, VEHARI</p>
+                        <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p className="mb-2"><i className="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div className="d-flex pt-3">
+                            <a className="btn btn-square btn-secondary rounded-circle me-2" href=""><i className="fab fa-twitter"></i></a>
+                            <a className="btn btn-square btn-secondary rounded-circle me-2" href=""><i className="fab fa-facebook-f"></i></a>
+                            <a className="btn btn-square btn-secondary rounded-circle me-2" href=""><i className="fab fa-youtube"></i></a>
+                            <a className="btn btn-square btn-secondary rounded-circle me-2" href=""><i className="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div className="col-md-6 col-lg-3">
-                        <h6 className="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
-                        <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>
-                            <a href={`https://wa.me/13072950382?`} style={{ fontWeight: '500' }}>
-                                +1307 2950382                        </a></p>
-                        <p className="mb-2"><i className="fa fa-envelope me-3"></i>
-                            <a style={{ fontWeight: '500' }} href="mailto:autopulsetrading@gmail.com">
-                                info@autopulsetrading.com
-                            </a></p>
-                        <div className="d-flex pt-2">
-                            <a className="btn btn-outline-light btn-social" href=""><i className=""><GrMastercard size={20} color='green' /></i></a>
-                            <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-facebook-f"></i></a>
-                            <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-youtube"></i></a>
-                            <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-linkedin-in"></i></a>
-                        </div>
+                    <div className="col-lg-3 col-md-6">
+                        <h5 className="text-white mb-4">Quick Links</h5>
+                        <a className="btn btn-link" href="">About Us</a>
+                        <a className="btn btn-link" href="">Contact Us</a>
+                        <a className="btn btn-link" href="">Our Services</a>
+                        <a className="btn btn-link" href="">Terms & Condition</a>
+                        <a className="btn btn-link" href="">Support</a>
                     </div>
-                    <div className="col-lg-5 col-md-12">
-                        <div className="row gy-5 g-4">
-                            <div className="col-md-6">
-                                <h6 className="section-title text-start text-primary text-uppercase mb-4">Company</h6>
-                                <a className="btn btn-link" href="/about">About Us</a>
-                                <a className="btn btn-link" href="/contact">Contact Us</a>
-                                <a className="btn btn-link" href="/privacy-policy">Privacy Policy</a>
-                                {/* <a className="btn btn-link" href="">Terms & Condition</a> */}
-                                {/* <a className="btn btn-link" href="">Support</a> */}
-                            </div>
-                            <div className="col-md-6">
-                                <h6 className="section-title text-start text-primary text-uppercase mb-4">Services</h6>
-                                <a className="btn btn-link" href="">Blogs</a>
-                                <a className="btn btn-link" href="#products-container">Products</a>
-                                <a className="btn btn-link" href="">Track</a>
-                                <a className="btn btn-link" href="">Contact</a>
-                            </div>
-                        </div>
+                    <div className="col-lg-3 col-md-6">
+                        <h5 className="text-white mb-4">Business Hours</h5>
+                        <p className="mb-1">Monday - Friday</p>
+                        <h6 className="text-light">09:00 am - 07:00 pm</h6>
+                        <p className="mb-1">Saturday</p>
+                        <h6 className="text-light">09:00 am - 12:00 pm</h6>
+                        <p className="mb-1">Sunday</p>
+                        <h6 className="text-light">Closed</h6>
                     </div>
-                </div>
-            </div>
-            <div className="container">
-                <div className="copyright">
-                    <div className="row">
-                        <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a h className="border-bottom" href="/">Autopulse</a>, All Right Reserved by Autopulse                        </div>
-                        <div className="col-md-6 text-center text-md-end">
-                            <div className="footer-menu">
-                                <a href="/">Home</a>
-                                <a href="/contact">Help</a>
-                                <a href="#faq-container">FQAs</a>
-                            </div>
+                    <div className="col-lg-3 col-md-6">
+                        <h5 className="text-white mb-4">Newsletter</h5>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <div className="position-relative w-100">
+                            <input className="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
+                            <button type="button" className="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                         </div>
                     </div>
                 </div>

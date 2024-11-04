@@ -62,36 +62,39 @@ function ProductsList({ product_type_key = null, product_type = {} }) {
         ]
     };
 
-    return (
+    if (product_type_key == 'machines')
 
-        <div id='products-container' className="latest-products container  p-3 mt-3 border" style={{ padding: '30px 12px', }}>
-            <div className="text-center mb-8 py-2 pb-4 flex align-center justify-between px-1">
-                <h2 className="text-secondary text-lg font-semibold">Explore {prod_types[product_type_key]}</h2>
-                <a href={`/products/${prod_links[product_type_key]}`} className='btn btn-primary btn-home-primary'>View All</a>
-            </div>
-            <div className="container mx-auto p-0" style={{ position: 'relative' }}>
-                <Flex align="center mt-3" style={{ position: 'absolute', right: '4px', top: '-40px', }} justify="end" gap={10} className="flex  justify-between mb-2 mr-auto">
-                    <Button onClick={() => sliderRef.current.slickPrev()} icon={<LeftOutlined />} />
-                    <Button onClick={() => sliderRef.current.slickNext()} icon={<RightOutlined />} />
-                </Flex>
-                <div className=" pr-0 mt-2" style={{ paddingRight: '0px !important' }}>
-                    {
-                        state?.loadingProds ?
-                            <ProductListSkeleton count={4} />
-                            :
-                            <Slider ref={sliderRef} {...settings}>
+        return (
 
-                                {product_type?.map((prod, index) => (
-
-                                    <ProductComponent prod={prod} index={index} />
-                                ))}
-
-                            </Slider>
-                    }
+            <div id='products-container' className="latest-products container  p-3 mt-3 border" style={{ padding: '30px 12px', }}>
+                <div className="text-center mb-8 py-2 pb-4 flex align-center justify-between px-1">
+                    {/* <h2 className="text-secondary text-lg font-semibold">Explore {prod_types[product_type_key]}</h2> */}
+                    <div></div>
+                    <a href={`/products/${prod_links[product_type_key]}`} className='btn btn-primary btn-home-primary'>View All</a>
                 </div>
-            </div>
-        </div >
-    )
+                <div className="container mx-auto p-0" style={{ position: 'relative' }}>
+                    <Flex align="center mt-3" style={{ position: 'absolute', right: '4px', top: '-40px', }} justify="end" gap={10} className="flex  justify-between mb-2 mr-auto">
+                        <Button onClick={() => sliderRef.current.slickPrev()} icon={<LeftOutlined />} />
+                        <Button onClick={() => sliderRef.current.slickNext()} icon={<RightOutlined />} />
+                    </Flex>
+                    <div className=" pr-0 mt-2" style={{ paddingRight: '0px !important' }}>
+                        {
+                            state?.loadingProds ?
+                                <ProductListSkeleton count={4} />
+                                :
+                                <Slider ref={sliderRef} {...settings}>
+
+                                    {product_type?.map((prod, index) => (
+
+                                        <ProductComponent prod={prod} index={index} />
+                                    ))}
+
+                                </Slider>
+                        }
+                    </div>
+                </div>
+            </div >
+        )
 }
 
 export default ProductsList

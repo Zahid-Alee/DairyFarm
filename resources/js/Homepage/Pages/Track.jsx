@@ -1,9 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Input, Steps, Card, Typography, Flex, Empty, Button } from 'antd';
-import { SearchOutlined } from '@ant-design/icons';
 import { HomeContext } from '../context/HomeContext';
-import { CiShoppingCart } from 'react-icons/ci';
-import { MdCheckCircleOutline } from 'react-icons/md';
 const { Step } = Steps;
 const { Title, Text } = Typography;
 
