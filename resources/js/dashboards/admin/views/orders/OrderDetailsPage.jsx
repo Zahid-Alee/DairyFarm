@@ -332,15 +332,15 @@ function OrderDetailsPage() {
                             },
                             {
                                 title: 'Shipping',
-                                description: 'process payment through cards',
+                                description: 'The order has being shipped',
                             },
                             {
                                 title: 'Shipped',
-                                description: 'process payment through cards',
+                                description: 'The order has been shipped',
                             },
                             {
                                 title: 'Delivered',
-                                description: 'process payment through cards',
+                                description: 'Customer has picked the order',
                             },
                         ]}
                     />

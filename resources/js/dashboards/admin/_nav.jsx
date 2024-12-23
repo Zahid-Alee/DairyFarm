@@ -2,25 +2,13 @@ import React from 'react';
 
 import {
   // GrUserSettings,
-  GrDeliver,
   GrCart,
   GrList,
   GrCreditCard,
-  GrMultiple,
-  // GrAppsRounded,
-  GrHome,
-  GrContact,
   GrContactInfo,
-  GrCircleInformation,
-  GrBarChart,
-  GrProjects,
-  // GrChatOption,
-  GrUserExpert,
+ GrBarChart,
   GrCircleQuestion,
-  GrBlog,
-  GrServices,
-  GrCar,
-  GrHistory
+
 } from "react-icons/gr";
 import { LuMilk } from "react-icons/lu";
 
@@ -73,12 +61,12 @@ const _nav = [
     to: '/customers/orders',
     icon: <GrCart size={20} color='white' />,
   },
-  {
-    component: CNavItem,
-    name: 'History',
-    to: '/customers/history',
-    icon: <GrHistory size={20} color='white' />,
-  },
+  // {
+  //   component: CNavItem,
+  //   name: 'History',
+  //   to: '/customers/history',
+  //   icon: <GrHistory size={20} color='white' />,
+  // },
 
   {
     component: CNavItem,

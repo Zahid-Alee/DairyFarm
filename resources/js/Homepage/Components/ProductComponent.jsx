@@ -56,8 +56,8 @@ function ProductComponent({ prod, index }) {
                 </div>
                 <div className="text-center p-4">
                     <div className="d-block h5" href="">{prod.name}</div>
-                    <span className="text-primary me-1">PKR {prod.price}</span>
-                    <span className="text-decoration-line-through">PKR {prod.make}</span>
+                    <span className="text-primary me-1">$ {prod.price}</span>
+                    <span className="text-decoration-line-through">$ {prod.make}</span>
                     <div className='text-primary me-1'>
                         Weight- {prod?.weight}KG
                     </div>

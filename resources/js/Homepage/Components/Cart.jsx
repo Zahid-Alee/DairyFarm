@@ -318,11 +318,14 @@ function RenderCheckoutStep({ auth, state, methods, dispatch, current_step, tota
                                     },
                                 ]}
                             >
-                                <Select placeholder="Please select your country">
+
+                                <Input placeholder="Please enter your country" />
+
+                                {/* <Select placeholder="Please select your country">
                                     <Option value="usa">United States</Option>
-                                    <Option value="canada">Canada</Option>
-                                    <Option value="other">Other</Option>
-                                </Select>
+                                    <Option value="canada">Pakistan</Option>
+                                    <Option value="other">Saudia</Option>
+                                </Select> */}
                             </Form.Item>
                         </Col>
                     </Row>
@@ -500,11 +503,9 @@ function RenderCheckoutStep({ auth, state, methods, dispatch, current_step, tota
                                         },
                                     ]}
                                 >
-                                    <Select placeholder="Please select your country">
-                                        <Option value="usa">United States</Option>
-                                        <Option value="canada">Canada</Option>
-                                        <Option value="other">Other</Option>
-                                    </Select>
+                                    <Input placeholder="Please enter your country" />
+
+                                   
                                 </Form.Item>
                             </Col>
                         </Row>}

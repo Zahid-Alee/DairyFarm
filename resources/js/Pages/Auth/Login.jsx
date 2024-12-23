@@ -25,7 +25,7 @@ export default function Login({ status, canResetPassword }) {
 
     const userHeadings = {
         "Whole Seller": "Whole Seller",
-        "Customer": "Customer",
+        "Customer": "Regular Customer",
         "Admin": "Admin",
     };
 

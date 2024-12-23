@@ -18,41 +18,7 @@ function ProductType() {
 
 
     return (
-        <div className='sm-p-0 container pt-5 p-3 sm:p-0 flex flex-col gap-3 m-auto'>
-
-            <div className="brands-container p-3 bg-white py-5 ">
-
-                <div className="text-center mb-8 py-5 pb-5">
-                    <span className="text-primary text-lg font-semibold">Brands</span>
-                    <h2 className="text-secondary text-2xl font-semibold">Explore By Brands</h2>
-                </div>
-
-                <Row gutter={[]} style={{ gap: '30px' }}>
-                    {state?.brands?.map((brand, index) => (
-                        <Col
-                            key={index}
-                            xs={10}
-                            sm={10}
-                            md={8}
-                            lg={10}
-                            xl={6}
-                            xxl={4}
-                        >
-                            <a href={`${location.pathname.split('/')[1] == 'parts' ? '/parts' : ''}/products/${prod_type}/search?brands=${brand.id}&page=1&price=&type=${prod_type}`} className=" product-card" style={{ height: '100%' }} data-aos="zoom-in" data-aos-delay="100">
-                                <div className="product-item w-full"  >
-                                    <img
-                                        loading='lazy'
-                                        style={{ height: '100px', width: '100%', objectFit: "contain" }} src={`/${brand?.logo?.replace('public', 'storage')}`}
-                                        alt="" />
-                                    <div className="text-dark font-medium text-primary text-center">
-                                        {brand?.name}
-                                    </div>
-                                </div>
-                            </a>
-                        </Col>
-                    ))}
-                </Row>
-            </div>
+        <div className='sm-p-0 container pt-5 p-3 sm:p-0 flex flex-col gap-3 m-auto'> 
 
             {prod_type != 'electric-bikes' && <div className="categories-container p-3 py-5 bg-white  ">
                 <div className="text-center mb-8 py-5 pb-5">

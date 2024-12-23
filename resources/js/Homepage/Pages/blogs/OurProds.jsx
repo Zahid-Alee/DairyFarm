@@ -21,8 +21,8 @@ function OurProds() {
                                 </div>
                                 <div className="text-center p-4">
                                     <a className="d-block h5" href="">Pure Milk</a>
-                                    <span className="text-primary me-1">PKR19.00</span>
-                                    <span className="text-decoration-line-through">PKR29.00</span>
+                                    <span className="text-primary me-1">$19.00</span>
+                                    <span className="text-decoration-line-through">$29.00</span>
                                 </div>
                             </div>
                         </div>
@@ -37,8 +37,8 @@ function OurProds() {
                                 </div>
                                 <div className="text-center p-4">
                                     <a className="d-block h5" href="">Fresh Meat</a>
-                                    <span className="text-primary me-1">PKR19.00</span>
-                                    <span className="text-decoration-line-through">PKR29.00</span>
+                                    <span className="text-primary me-1">$19.00</span>
+                                    <span className="text-decoration-line-through">$29.00</span>
                                 </div>
                             </div>
                         </div>
@@ -53,8 +53,8 @@ function OurProds() {
                                 </div>
                                 <div className="text-center p-4">
                                     <a className="d-block h5" href="">Dairy Products</a>
-                                    <span className="text-primary me-1">PKR19.00</span>
-                                    <span className="text-decoration-line-through">PKR29.00</span>
+                                    <span className="text-primary me-1">$19.00</span>
+                                    <span className="text-decoration-line-through">$29.00</span>
                                 </div>
                             </div>
                         </div>
@@ -69,8 +69,8 @@ function OurProds() {
                                 </div>
                                 <div className="text-center p-4">
                                     <a className="d-block h5" href="">Organic Food</a>
-                                    <span className="text-primary me-1">PKR19.00</span>
-                                    <span className="text-decoration-line-through">PKR29.00</span>
+                                    <span className="text-primary me-1">$19.00</span>
+                                    <span className="text-decoration-line-through">$29.00</span>
                                 </div>
                             </div>
                         </div>

@@ -73,28 +73,28 @@ function CategoriesForm() {
   const product_types = [
     {
       id: 1,
-      title: 'Machine'
+      title: 'Dairy'
     },
-    {
-      id: 2,
-      title: 'Electric Bikes'
-    },
-    {
-      id: 3,
-      title: 'Vehicles'
-    },
-    {
-      id: 4,
-      title: 'Machine Part'
-    },
-    {
-      id: 5,
-      title: 'Vehicle Part'
-    },
-    {
-      id: 6,
-      title: 'Bike Part'
-    },
+    // {
+    //   id: 2,
+    //   title: 'Electric Bikes'
+    // },
+    // {
+    //   id: 3,
+    //   title: 'Vehicles'
+    // },
+    // {
+    //   id: 4,
+    //   title: 'Machine Part'
+    // },
+    // {
+    //   id: 5,
+    //   title: 'Vehicle Part'
+    // },
+    // {
+    //   id: 6,
+    //   title: 'Bike Part'
+    // },
 
   ]
 
